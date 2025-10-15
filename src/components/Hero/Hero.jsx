@@ -5,16 +5,15 @@ import heroImage from "../../assets/hero.png";
 
 const Hero = () => {
   return (
-    <div>
-      <div
-        className="hero min-h-screen absolute top-0 -z-10"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-        }}
-      >
+    <section
+      className="hero relative min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${heroImage})`,
+      }}
+    >
         <div className="absolute inset-0 bg-[#27318B]/60"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-        <div className="hero-content text-neutral-content text-center">
+  <div className="hero-content text-neutral-content text-center relative z-10">
           <div className="max-w-2xl">
             <h1 className="mb-5 text-5xl font-bold">
               We Ensure better education for better world
@@ -30,8 +29,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-      </div>
-    </div>
+    </section>
   );
 }
 
