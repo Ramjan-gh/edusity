@@ -4,9 +4,12 @@ import RightArrow from '../../assets/svg/RightArrow';
 import heroImage from "../../assets/hero.png";
 
 const Hero = () => {
+
+  
+
   return (
     <section
-      className="hero relative min-h-screen bg-cover bg-center"
+      className="hero relative min-h-screen bg-cover bg-center z-0"
       style={{
         backgroundImage: `url(${heroImage})`,
       }}

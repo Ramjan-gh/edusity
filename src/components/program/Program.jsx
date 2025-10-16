@@ -8,8 +8,7 @@ import programIcon2 from "../../assets/program-icon-2.png";
 import programIcon3 from "../../assets/program-icon-3.png";
 import aboutImage from "../../assets/about.png";
 import playIcon from "../../assets/play-icon.png";
-
-const Program = () => {
+const Program = ({setPlayState}) => {
   return (
     <section className="program-section py-20 bg-white text-black">
       <div className="max-w-screen-2xl mx-auto ">
@@ -92,7 +91,9 @@ const Program = () => {
         <div className="relative w-[40%] ">
           <img className="rounded-lg" src={aboutImage} alt="" srcset="" />
           <div className="absolute flex inset-0 items-center justify-center">
-            <img className="w-12" src={playIcon} alt="" srcset="" />
+            <img className="w-12 cursor-pointer" src={playIcon} alt="" srcset="" onClick={()=>{
+              setPlayState(true)
+            }} />
           </div>
         </div>
         <div className="w-[70%] md:w-[55%] mb-16 md:mb-0">
